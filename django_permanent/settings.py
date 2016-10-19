@@ -7,7 +7,8 @@ FIELD_KWARGS = getattr(settings, 'PERMANENT_FIELD_KWARGS', dict(
     default=None,
     null=True,
     blank=True,
-    editable=False
+    editable=False,
+    db_index=True
 ))
 
 FIELD_DEFAULT = FIELD_KWARGS['default']
